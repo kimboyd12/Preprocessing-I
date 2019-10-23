@@ -254,13 +254,28 @@ table td {
 table th {
   justify-content: space-evenly;
   background-color: lightgrey;
+  text-align: center;
 }
 .skills-box {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 4%;
+}
+.skills-box h2 {
+  font-size: 3rem;
+  padding-bottom: 1%;
 }
 .work-table h2 {
   font-size: 2.8rem;
   margin-left: 45%;
   margin-bottom: 2%;
+}
+footer {
+  font-size: 2.8rem;
+  margin-left: 41%;
+  padding-top: 10%;
+}
+footer i {
+  padding-left: 5%;
+  text-decoration: none;
+  color: black;
 }
