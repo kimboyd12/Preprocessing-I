@@ -2,6 +2,14 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+.para-font {
+  color: gray;
+}
+.main-flex {
+  display: flex;
+  flex-direction: column;
+}
+@header-font : font-family: 'Barlow', sans-serif;
 html,
 body,
 div,
@@ -160,7 +168,7 @@ header nav {
 header nav a {
   justify-content: space-between;
   margin: 4%;
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-decoration: none;
   flex-direction: row;
   color: black;
@@ -192,29 +200,31 @@ header nav a {
 }
 .about {
   display: flex;
-  margin-left: 3%;
   flex-direction: column;
-  margin: 5% 23%;
+  margin: 5% 15%;
   width: 70%;
+  text-align: center;
 }
 .about h2 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   padding-bottom: 2%;
   width: 14%;
-  margin-left: 33%;
+  margin-left: 43%;
 }
 .about p {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  color: gray;
 }
 .skills-box {
   text-align: center;
 }
 .skills-box h2 {
-  font-size: 2.8rem;
+  font-size: 3rem;
 }
 .skills-box p {
   padding: 1%;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  color: gray;
 }
 table {
   display: flex;
@@ -231,6 +241,10 @@ table th {
 }
 table td {
   padding: 2%;
+  color: gray;
+}
+table th {
+  justify-content: space-evenly;
 }
 .skills-box {
   font-size: 1.8rem;
