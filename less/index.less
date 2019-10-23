@@ -81,8 +81,9 @@ html {
 	.main-flex();
 	width: 80%;
 	height: 200%;
-	margin: 5% 10%
-}
+	margin: 5% 10%	
+
+	}
 
 header {
 
@@ -99,7 +100,14 @@ header {
 	}
 
 	nav {
-	margin: 4% 35%
+	margin: 4% 35%;
+	display: flex;
+
+	@media (max-width: 500px) {
+		   justify-content: center;
+		   text-align: center;
+	   }
+
 	}
 
 	nav a {
@@ -109,7 +117,7 @@ header {
 		text-decoration: none;
 		flex-direction: row;
 		color: black;
-	
+
 	}
 }
 
@@ -120,16 +128,36 @@ header {
 	border: 2px solid black;
 	border-radius: 10px;
 	padding: 3%;
+	
+	@media (max-width: 500px) {
+		border: none;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		   
+	   }
 
 
  	.name-city {
-		padding: 3%;
+		padding: 0% 3%;
 		width: 60%;
 		background-color: @primary-color;
 		border-radius: 5%;
+		margin-left: -12%;
+
+		@media (max-width: 500px) {
+			margin-left: 5%;
+			width: 90%;
+			text-align: center;
+			background-color: white;
+			   
+		   }
 	
 	 }
 	 
+	 h1 {
+		 padding-top: 30%;
+	 }
 	 .name-city p {
 		 padding-top: 25%;
 		 font-size: 2.2rem;
@@ -139,6 +167,12 @@ header {
 	img {
 		width: 55%;
 		border-radius: 5%;
+
+		@media (max-width: 500px) {
+		margin-left: 23%;
+			   
+		   }
+	
 
 		
 	}
@@ -169,12 +203,22 @@ header {
 		width: 14%;
 		margin-left: 43%;
 
+		@media (max-width: 500px) {
+			display: none;
+			   
+		   }
+
 	}
 
 	p {
 		font-size: 2rem;
 		.para-font();
 	}
+
+	@media (max-width: 500px) {
+		text-align: center;
+		   
+	   }
 }
 
 .skills-box {
@@ -201,6 +245,11 @@ table {
 	width: 70%;
 	margin-left:27%;
 
+	@media (max-width: 500px) {
+		margin-left: 4%;
+		   
+	   }
+
 	tr, th {
 		border: 1px solid black;
 		font-size: 2.2rem;
@@ -218,7 +267,14 @@ table {
 		justify-content: space-evenly;
 		background-color: @primary-color;
 		text-align: center;
+
+		@media (max-width: 500px) {
+			display: none;
+			   
+		   }
 	}
+
+
 }
 
 .skills-box {
@@ -228,7 +284,7 @@ table {
 	h2 {
 		font-size: 3rem;
 		padding-bottom: 1%;
-}
+	}
 }
 .work-table {
 	
@@ -236,17 +292,42 @@ table {
 		font-size: 2.8rem;
 		margin-left:45%;
 		margin-bottom: 2%;
+
+		@media (max-width: 500px) {
+			display:flex;
+			justify-content: center;
+			margin-left: 0%;
+			   
+		   }
 	}
+}
+
+.email p {
+
+	font-size: 1.9rem;
+	margin: 5% 40% 2%;
+
+	@media (max-width: 500px) {
+		display: flex;
+		justify-content: center;
+		   
+	   }
 }
 
 footer {
 	font-size: 2.8rem;
-	margin-left: 41%;
-	padding-top: 10%;
+	margin-left: 40%;
+	padding-top: 3%;
+
+	@media (max-width: 500px) {
+		display: flex;
+		justify-content: flex-start;
+	   }
 
 	i {
 		padding-left: 5%;
 		text-decoration: none;
 		color: black;
+
 	}
 }

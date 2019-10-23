@@ -163,6 +163,13 @@ header div p {
 }
 header nav {
   margin: 4% 35%;
+  display: flex;
+}
+@media (max-width: 500px) {
+  header nav {
+    justify-content: center;
+    text-align: center;
+  }
 }
 header nav a {
   justify-content: space-between;
@@ -180,11 +187,31 @@ header nav a {
   border-radius: 10px;
   padding: 3%;
 }
+@media (max-width: 500px) {
+  .top-content {
+    border: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .top-content .name-city {
-  padding: 3%;
+  padding: 0% 3%;
   width: 60%;
   background-color: lightgrey;
   border-radius: 5%;
+  margin-left: -12%;
+}
+@media (max-width: 500px) {
+  .top-content .name-city {
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+    background-color: white;
+  }
+}
+.top-content h1 {
+  padding-top: 30%;
 }
 .top-content .name-city p {
   padding-top: 25%;
@@ -193,6 +220,11 @@ header nav a {
 .top-content img {
   width: 55%;
   border-radius: 5%;
+}
+@media (max-width: 500px) {
+  .top-content img {
+    margin-left: 23%;
+  }
 }
 .top-content button {
   font-size: 1.8rem;
@@ -215,9 +247,19 @@ header nav a {
   width: 14%;
   margin-left: 43%;
 }
+@media (max-width: 500px) {
+  .about h2 {
+    display: none;
+  }
+}
 .about p {
   font-size: 2rem;
   color: gray;
+}
+@media (max-width: 500px) {
+  .about {
+    text-align: center;
+  }
 }
 .skills-box {
   text-align: center;
@@ -240,6 +282,11 @@ table {
   width: 70%;
   margin-left: 27%;
 }
+@media (max-width: 500px) {
+  table {
+    margin-left: 4%;
+  }
+}
 table tr,
 table th {
   border: 1px solid black;
@@ -256,6 +303,11 @@ table th {
   background-color: lightgrey;
   text-align: center;
 }
+@media (max-width: 500px) {
+  table th {
+    display: none;
+  }
+}
 .skills-box {
   font-size: 2rem;
   margin-bottom: 4%;
@@ -269,10 +321,33 @@ table th {
   margin-left: 45%;
   margin-bottom: 2%;
 }
+@media (max-width: 500px) {
+  .work-table h2 {
+    display: flex;
+    justify-content: center;
+    margin-left: 0%;
+  }
+}
+.email p {
+  font-size: 1.9rem;
+  margin: 5% 40% 2%;
+}
+@media (max-width: 500px) {
+  .email p {
+    display: flex;
+    justify-content: center;
+  }
+}
 footer {
   font-size: 2.8rem;
-  margin-left: 41%;
-  padding-top: 10%;
+  margin-left: 40%;
+  padding-top: 3%;
+}
+@media (max-width: 500px) {
+  footer {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 footer i {
   padding-left: 5%;
