@@ -13,9 +13,8 @@
 	flex-direction: column;
 }
 
-@header-font {
-font-family: 'Barlow', sans-serif;
-}
+@primary-color: lightgrey;
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -44,6 +43,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+
 }
 ol, ul {
 	list-style: none;
@@ -73,8 +73,9 @@ html, body {
 
 html {
 	font-size: 62.5%;
-
+	
 }
+
 
 .container {
 	.main-flex();
@@ -99,7 +100,6 @@ header {
 
 	nav {
 	margin: 4% 35%
-	
 	}
 
 	nav a {
@@ -109,7 +109,6 @@ header {
 		text-decoration: none;
 		flex-direction: row;
 		color: black;
-
 	}
 }
 
@@ -119,38 +118,39 @@ header {
 	width: 70%;
 	border: 2px solid black;
 	border-radius: 10px;
-	padding: 5%;
+	padding: 3%;
 
 
  	.name-city {
-		padding-top: 10%;
+		padding: 3%;
 		width: 60%;
+		background-color: @primary-color;
+		border-radius: 5%;
+	
 	 }
 	 
 	 .name-city p {
 		 padding-top: 25%;
 		 font-size: 2.2rem;
-		//  text-align: center;
+		 
 	 }
 
 	img {
 		width: 55%;
+		border-radius: 5%;
+
 		
 	}
 
 	button {
-		// margin-left: 37%;
+	
 		font-size: 1.8rem;
 		font-family: 'Barlow Condensed', sans-serif;
-		border: 1px solid black;
+		border: 1px solid;
 		border-radius: 5px;
 	}
 
-	.name-city h1 {
-			@header-font;
-		}
 }
-
 
 
 .about {
@@ -159,12 +159,15 @@ header {
 	margin: 5% 15%;
 	width: 70%;
 	text-align: center;
+	border-bottom: 1px solid black;
+	padding-bottom: 3%;
 
 	h2 {
 		font-size: 3rem;
 		padding-bottom: 2%;
 		width: 14%;
 		margin-left: 43%;
+
 	}
 
 	p {
@@ -176,9 +179,13 @@ header {
 .skills-box {
 
 	text-align: center;
+	border-bottom: 1px solid black;
+	padding-bottom: 3%;
+	width: 70%;
+	margin-left: 15%;
 
 	h2 {
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 
 	p {
@@ -197,7 +204,7 @@ table {
 		border: 1px solid black;
 		font-size: 2.2rem;
 		text-align: left;
-		padding: 2%
+		padding: 2%;
 	}
 
 	td {
@@ -208,6 +215,7 @@ table {
 
 	th {
 		justify-content: space-evenly;
+		background-color: @primary-color;
 	}
 }
 
@@ -224,6 +232,4 @@ table {
 		margin-left:45%;
 		margin-bottom: 2%;
 	}
-
-
 }

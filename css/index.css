@@ -9,7 +9,6 @@
   display: flex;
   flex-direction: column;
 }
-@header-font : font-family: 'Barlow', sans-serif;
 html,
 body,
 div,
@@ -179,11 +178,13 @@ header nav a {
   width: 70%;
   border: 2px solid black;
   border-radius: 10px;
-  padding: 5%;
+  padding: 3%;
 }
 .top-content .name-city {
-  padding-top: 10%;
+  padding: 3%;
   width: 60%;
+  background-color: lightgrey;
+  border-radius: 5%;
 }
 .top-content .name-city p {
   padding-top: 25%;
@@ -191,11 +192,12 @@ header nav a {
 }
 .top-content img {
   width: 55%;
+  border-radius: 5%;
 }
 .top-content button {
   font-size: 1.8rem;
   font-family: 'Barlow Condensed', sans-serif;
-  border: 1px solid black;
+  border: 1px solid;
   border-radius: 5px;
 }
 .about {
@@ -204,6 +206,8 @@ header nav a {
   margin: 5% 15%;
   width: 70%;
   text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 3%;
 }
 .about h2 {
   font-size: 3rem;
@@ -217,9 +221,13 @@ header nav a {
 }
 .skills-box {
   text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 3%;
+  width: 70%;
+  margin-left: 15%;
 }
 .skills-box h2 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .skills-box p {
   padding: 1%;
@@ -245,6 +253,7 @@ table td {
 }
 table th {
   justify-content: space-evenly;
+  background-color: lightgrey;
 }
 .skills-box {
   font-size: 1.8rem;
