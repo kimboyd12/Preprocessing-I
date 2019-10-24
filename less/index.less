@@ -4,6 +4,18 @@
    License: none (public domain)
 */
 
+.para-font {
+	color: gray;
+}
+
+.main-flex {
+	display: flex;
+	flex-direction: column;
+}
+
+@primary-color: lightgrey;
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -31,6 +43,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+
 }
 ol, ul {
 	list-style: none;
@@ -54,6 +67,267 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-family: 'Barlow Condensed', sans-serif;
 }
 
+html {
+	font-size: 62.5%;
+	
+}
+
+
+.container {
+	.main-flex();
+	width: 80%;
+	height: 200%;
+	margin: 5% 10%	
+
+	}
+
+header {
+
+	h1 {
+		font-size: 3.2rem;
+	}
+
+	h3 {
+		font-size: 2.2rem;
+	}
+
+	div p {
+		font-size: 2rem;
+	}
+
+	nav {
+	margin: 4% 35%;
+	display: flex;
+
+	@media (max-width: 500px) {
+		   justify-content: center;
+		   text-align: center;
+	   }
+
+	}
+
+	nav a {
+		justify-content: space-between;
+		margin: 4%;
+		font-size: 2.2rem;
+		text-decoration: none;
+		flex-direction: row;
+		color: black;
+
+	}
+}
+
+.top-content {
+	display: flex;
+	margin-left: 15%;
+	width: 70%;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 3%;
+	
+	@media (max-width: 500px) {
+		border: none;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		   
+	   }
+
+
+ 	.name-city {
+		padding: 0% 3%;
+		width: 60%;
+		background-color: @primary-color;
+		border-radius: 5%;
+		margin-left: -12%;
+
+		@media (max-width: 500px) {
+			margin-left: 5%;
+			width: 90%;
+			text-align: center;
+			background-color: white;
+			   
+		   }
+	
+	 }
+	 
+	 h1 {
+		 padding-top: 30%;
+	 }
+	 .name-city p {
+		 padding-top: 25%;
+		 font-size: 2.2rem;
+		 
+	 }
+
+	img {
+		width: 55%;
+		border-radius: 5%;
+
+		@media (max-width: 500px) {
+		margin-left: 23%;
+			   
+		   }
+	
+
+		
+	}
+
+	button {
+	
+		font-size: 1.8rem;
+		font-family: 'Barlow Condensed', sans-serif;
+		border: 1px solid;
+		border-radius: 5px;
+	}
+
+}
+
+
+.about {
+
+	.main-flex();
+	margin: 5% 15%;
+	width: 70%;
+	text-align: center;
+	border-bottom: 1px solid black;
+	padding-bottom: 3%;
+
+	h2 {
+		font-size: 3rem;
+		padding-bottom: 2%;
+		width: 14%;
+		margin-left: 43%;
+
+		@media (max-width: 500px) {
+			display: none;
+			   
+		   }
+
+	}
+
+	p {
+		font-size: 2rem;
+		.para-font();
+	}
+
+	@media (max-width: 500px) {
+		text-align: center;
+		   
+	   }
+}
+
+.skills-box {
+
+	text-align: center;
+	border-bottom: 1px solid black;
+	padding-bottom: 3%;
+	width: 70%;
+	margin-left: 15%;
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	p {
+		padding: 1%;
+		font-size: 2rem;
+		.para-font();
+	}
+}
+
+table {
+	.main-flex();
+	width: 70%;
+	margin-left:27%;
+
+	@media (max-width: 500px) {
+		margin-left: 4%;
+		   
+	   }
+
+	tr, th {
+		border: 1px solid black;
+		font-size: 2.2rem;
+		text-align: left;
+		padding: 2%;
+	}
+
+	td {
+		padding: 2%;
+		.para-font();
+
+	}
+
+	th {
+		justify-content: space-evenly;
+		background-color: @primary-color;
+		text-align: center;
+
+		@media (max-width: 500px) {
+			display: none;
+			   
+		   }
+	}
+
+
+}
+
+.skills-box {
+	font-size: 2rem;
+	margin-bottom: 4%;
+
+	h2 {
+		font-size: 3rem;
+		padding-bottom: 1%;
+	}
+}
+.work-table {
+	
+	h2 {
+		font-size: 2.8rem;
+		margin-left:45%;
+		margin-bottom: 2%;
+
+		@media (max-width: 500px) {
+			display:flex;
+			justify-content: center;
+			margin-left: 0%;
+			   
+		   }
+	}
+}
+
+.email p {
+
+	font-size: 1.9rem;
+	margin: 5% 40% 2%;
+
+	@media (max-width: 500px) {
+		display: flex;
+		justify-content: center;
+		   
+	   }
+}
+
+footer {
+	font-size: 2.8rem;
+	margin-left: 40%;
+	padding-top: 3%;
+
+	@media (max-width: 500px) {
+		display: flex;
+		justify-content: flex-start;
+	   }
+
+	i {
+		padding-left: 5%;
+		text-decoration: none;
+		color: black;
+
+	}
+}
